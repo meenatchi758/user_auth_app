@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to your Dashboard 🎉</h2>
+    <p>You have successfully logged in.</p>
+
+    <form action="{{ url_for('logout') }}" method="post">
+        <br><br>
+      <button type="submit" class="logout-btn">Logout</button>
+    </form>
+  </div>
+</body>
+</html>

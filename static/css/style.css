@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Card Container */
+form, .dashboard {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+/* Button */
+button {
+  background-color: #ffffff;
+  color: #6e8efb;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e4e4e4;
+  transform: translateY(-2px);
+}
+
+/* Flash Messages */
+.flash {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #fff;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+/* Link */
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #dcdcdc;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  form, .dashboard {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
+.logout-btn {
+  margin-top: 20px;
+  padding: 0.6rem 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
